@@ -6,8 +6,16 @@ const adminRoutes = require("./routes/adminroute");
 
 
 const app = express();
+
+
 app.use(cookieParser());
 app.use(express.json());
+const cors = require("cors");
+
+app.use(cors({
+  origin: "http://localhost:3000",
+  credentials: true
+}));
 
 app.use("/api/auth", authRoutes);
 app.use("/api/users", userRoutes);

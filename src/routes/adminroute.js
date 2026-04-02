@@ -10,4 +10,4 @@ router.use(protect, authorizeRoles("admin"));
 router.get("/users",getAllusers);
 router.put("/users/:id/block",blockUser);
 router.put("/users/:id/role",changeUserRole);
-module.exports = {router};
+module.exports = router;

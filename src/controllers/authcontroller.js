@@ -396,7 +396,7 @@ await pool.query(
     ,[hashedResetToken,expiredTime,user.id]
 );
 
-const resetLink = `http://localhost:5000/reset-password/${resetToken}`;
+const resetLink = `http://localhost:5000/api/auth/reset-password/${resetToken}`;
  
 await sendEmail(
     email,

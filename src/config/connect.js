@@ -14,3 +14,4 @@ pool.query('SELECT NOW()')
   .catch(err => console.error(err));
 
 module.exports = pool;
+  
