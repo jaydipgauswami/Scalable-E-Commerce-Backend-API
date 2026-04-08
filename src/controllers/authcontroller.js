@@ -164,7 +164,8 @@ const isProduction = process.env.NODE_ENV === "production";
         user:{
             id:user.id,
             name:user.name,
-            email:user.email
+            email:user.email,
+              role: user.role
         },
     });
    }
